@@ -17,7 +17,7 @@ Cree en la base de datos **POOCL1** un procedimiento almacenado llamado `usp_pro
 
 * En la carpeta **Controllers**, crear el **controlador** `ProductoController`.
 
-* En el controlador crea el **ActionResult** `ProductosPorDescripcion` donde permita ejecutar el procedimiento almacenado `usp_productos_por_descripcion`, y retorne una vistacon los resultados.
+* En el controlador crea el **ActionResult** `ProductosPorDescripcion` donde permita ejecutar el procedimiento almacenado `usp_productos_por_descripcion`, y retorne una vista con los resultados.
 
 * En la vista de consulta, defina un control **TextBox** donde al ingresar una descripción y pulsar en un botón Consultar, visualice la vista con la lista de resultados.
 
