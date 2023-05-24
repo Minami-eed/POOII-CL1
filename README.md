@@ -10,7 +10,7 @@ Implementa una consulta donde permita filtra los registros de la tabla Producto 
 ![Data Base](/public/database.png)
 
 **En la aplicación SQL Server:**
-Cree en la base de datos **POOCL1** un procedimiento almacenado llamado `**usp_productos_por_descripcion**`, donde liste los registros de Producto de acuerdo a una descripción, el cual se ingresa como parámetro **@descripcion varchar(20)**. El procedimiento almacenado debe retornar la lista de productos con los campos **id**, **descripcion**, **tipo**, **precio**.
+Cree en la base de datos **POOCL1** un procedimiento almacenado llamado `usp_productos_por_descripcion`, donde liste los registros de Producto de acuerdo a una descripción, el cual se ingresa como parámetro **@descripcion varchar(20)**. El procedimiento almacenado debe retornar la lista de productos con los campos **id**, **descripcion**, **tipo**, **precio**.
 
 **En la aplicación ASP.NET MVC**:
 * En la carpeta **Models**, crea la clase **Producto** definido por los campos de la tabla `Producto`.
