@@ -1,0 +1,75 @@
+﻿@model IEnumerable<POOII_CL1_QUISPE_EDSON.Models.Producto>
+
+@{
+    ViewData["Title"] = "ProductosPorTipoYPrecio";
+}
+
+@using (Html.BeginForm("ProductosPorTipoYPrecio", "Producto"))
+{
+    <div class="container mt-5 animate__animated animate__fadeIn">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-5">Buscar por Tipo y Precio</h1>
+
+                <div class="form-group">
+                    @Html.Label("Tipo:")
+                    @Html.TextBox("tipo", null, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Precio:")
+                    @Html.TextBox("precio", null, new { @class = "form-control" })
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">Consultar</button>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+<div class="container mt-5 animate__animated animate__fadeIn">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Descripcion)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Tipo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Precio)
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Descripcion)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Tipo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Precio)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

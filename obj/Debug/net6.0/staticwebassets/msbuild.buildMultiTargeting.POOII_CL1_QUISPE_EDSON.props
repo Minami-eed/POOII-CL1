@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\POOII_CL1_QUISPE_EDSON.props" />
+</Project>
